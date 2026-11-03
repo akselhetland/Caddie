@@ -1,16 +1,16 @@
-# Caddie 0.7
+# Caddie 0.8 — Smart GPS
 
-Installerbar iPhone PWA. Legg alle filene i rotmappen på GitHub Pages.
+Last opp alle filene i denne mappen til roten av GitHub-repoet. GitHub Pages: main / root.
 
-## Nytt i 0.7
-- Tee-valg før runden, lagres på runden. NB: scorekortlengder for andre tees importeres ikke automatisk.
-- Manuelt utslagspunkt og flaggpunkt per hull (trykk på kartet etter valg av modus).
-- Flyttbart siktepunkt og estimert spredningsellipse for valgt kølle.
-- Redigerbar kølleprofil med carry og side-/lengdespredning.
+## Nytt
+- Kartet dekker hele skjermen med flytende kontroller.
+- GPS starter ved åpning av GPS-visning og ved ny runde. iOS-PWA har ikke pålitelig bakgrunnssporing.
+- Én slagknapp: første trykk lagrer start, neste trykk avslutter forrige og starter neste.
+- Vind via Open-Meteo (10 m modellvind, ikke lokal måling).
+- Høydeforskjell via Open-Meteo Elevation ved manuelt trykk, der tjenesten er tilgjengelig.
+- Spilleavstand er kun et grovt estimat og må ikke brukes som nøyaktig verdi.
+- Turneringsmodus skjuler vind og spilleavstand, men er ingen garanti for regeloverholdelse.
+- Tee, flagg, sikte og OSM-kartobjekter beholdt.
 
 ## Viktig
-- Ingen verifiserte GPS-koordinater for Egersund er inkludert. Markeringer må kontrolleres.
-- Spredningen er en illustrasjon basert på manuelle estimater, ikke sannsynlighetsmodell.
-- Data lagres i localStorage; ta sikkerhetskopi i Oppsett før oppdatering.
-- Eksterne kart/API-er krever nett og kan være utilgjengelige.
-- GPS fungerer kun med posisjonstillatelse og HTTPS, og bakgrunnssporing er ikke garantert.
+Ta backup via Oppsett før oppdatering. GPS, vær, høyde og kart krever HTTPS og nettilgang. Ingen offisielle greenkonturer inkludert. Scorekort/banedata må verifiseres.
